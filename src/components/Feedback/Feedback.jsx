@@ -1,8 +1,10 @@
 import { Component } from 'react';
-import FeedbackButton from './FeedbackButton/FeedbackButton';
-import Section from './Section/Section';
-import Statistics from './Statistics/Statistics';
-import Notification from './Notification';
+import FeedbackButton from 'components/FeedbackButton/FeedbackButton';
+import Section from 'components/Section/Section';
+import Statistics from 'components/Statistics/Statistics';
+import Notification from 'components/Notification';
+
+// import FeedbackOptions from 'components/Feedback/FeedbackOptions/FeedbackOptions';
 
 const INITIAL_STATE = {
   good: 0,
