@@ -41,5 +41,5 @@ class FeedbackButton extends Component {
 export default FeedbackButton;
 
 FeedbackButton.propTypes = {
-  onLeaveFeedback: PropTypes.func.isRequired,
+  handleClick: PropTypes.func.isRequired,
 };

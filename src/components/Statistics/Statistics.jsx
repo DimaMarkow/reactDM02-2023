@@ -1,5 +1,7 @@
 import { Component } from 'react';
 
+import PropTypes from 'prop-types';
+
 class Statistics extends Component {
   render() {
     return (
@@ -40,3 +42,13 @@ class Statistics extends Component {
 }
 
 export default Statistics;
+
+Statistics.propTypes = {
+  date: PropTypes.shape({
+    good: PropTypes.number.isRequired,
+    neutral: PropTypes.number.isRequired,
+    bad: PropTypes.number.isRequired,
+  }),
+  total: PropTypes.number.isRequired,
+  positivePercentage: PropTypes.number.isRequired,
+};

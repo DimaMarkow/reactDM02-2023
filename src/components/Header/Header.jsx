@@ -1,4 +1,5 @@
 import { Component } from 'react';
+import PropTypes from 'prop-types';
 
 class Header extends Component {
   render() {
@@ -31,6 +32,7 @@ class Header extends Component {
               <button
                 className="btn btn-sm btn-outline-secondary"
                 type="button"
+                onClick={this.props.showContacts}
               >
                 Contacts
               </button>
@@ -43,3 +45,8 @@ class Header extends Component {
 }
 
 export default Header;
+
+Header.propTypes = {
+  showFeedback: PropTypes.func,
+  showContacts: PropTypes.func,
+};

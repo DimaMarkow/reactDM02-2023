@@ -49,19 +49,18 @@ class Feedback extends Component {
         <Section title="Please leave feedback">
           <FeedbackButton handleClick={this.handleClick} />
         </Section>
-        {totalStat ? (
-          <Section title="Statistics">
+
+        <Section title="Statistics">
+          {totalStat ? (
             <Statistics
               date={this.state}
               total={this.countTotalFeedback()}
               positivePercentage={this.countPositiveFeedbackPercentage()}
             />
-          </Section>
-        ) : (
-          <Section title="Statistics">
+          ) : (
             <Notification message="There is no feedback" />
-          </Section>
-        )}
+          )}
+        </Section>
       </div>
     );
   }
